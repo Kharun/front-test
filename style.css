@@ -452,11 +452,15 @@ img {
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: 99;
+    z-index: 1000;
     flex-direction: column;
     transform: scale(0.9); 
     transition: transform 0.5s ease, opacity 0.5s ease; 
     opacity: 0; 
+
+    img {
+        max-height: 700px;
+    }
 }
 
 .plan__modal.active {
@@ -563,7 +567,7 @@ img {
     color: #FFFFFF;
     cursor: pointer;
     position: relative;
-    z-index: 99;
+    z-index: 60;
 }
 
 .call__btn::after {
